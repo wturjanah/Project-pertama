@@ -1,0 +1,38 @@
+
+.box1 {
+    background-color: yellow;
+    width: 200px;
+    height: 500px;
+    border: 2px solid;
+}
+.box2 {
+    background-color: orangered;
+    width: 200px;
+    height: 500px;
+    border: 2px solid;
+    position: relative;
+    left: 250px;
+    top: -500px;
+}
+
+.box3 {
+    background-color: green;
+    width: 200px;
+    height: 500px;
+    border: 2px solid;
+    float: right;
+    position: relative;
+    right: 300px;
+    top: -1000px;
+
+}
+.box4 {
+    background-color: blue;
+    width: 200px;
+    height: 500px;
+    border: 2px solid;
+    float: right;
+    position: relative;
+    right: -150px;
+    top: -1000px;
+}
