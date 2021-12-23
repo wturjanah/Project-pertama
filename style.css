@@ -1,0 +1,21 @@
+.container {
+  width: 50%;
+}
+fieldset {
+  background-color: rgba(165, 225, 247, 0.5);
+}
+table th {
+  background-color: lightcyan;
+  width: 20%;
+}
+table td{
+  background-color: white;
+  width: 20%;
+  text-align: center;
+}
+#uang {
+  width: 97%;
+}
+select {
+  width: 100%;
+}
