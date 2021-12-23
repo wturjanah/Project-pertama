@@ -1,47 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kurs</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <form action="">
-        <fieldset>
-          <legend>Kurs Rupiah Mata Uang Asing</legend>
-          <table border="1">
-            <tr>
-              <th>Masukan Nilai</th>
-              <th>Valas</th>
-              <th>Nilai Rupiah</th>
-            </tr>
-            <tr>
-              <td><input type="text" id="uang" /></td>
-              <td>
-                <select name="" id="valas">
-                  <option value="Dollar US" id="us">Dollar US</option>
-                  <option value="Dollar Singapore" id="singapore">
-                    Dollar Singapore
-                  </option>
-                  <option value="Ringgit Malaysia" id="ringgit">
-                    Ringgit Malaysia
-                  </option>
-                  <option value="Yen Jepang" id="yen">Yen Jepang</option>
-                  <option value="Euro" id="euro">Euro</option>
-                  <option value="Riyal Arab Saudi" id="rial">
-                    Riyal Arab Saudi
-                  </option>
-                </select>
-              </td>
-              <td id="hasil"></td>
-            </tr>
-          </table>
-        </fieldset>
-      </form>
+<html>
+<head>
+    <title>Chat</title>
+    
+</head>
+<body background="image3.jpg" style="background-size: cover;"> 
+    <center>
+	<h1 style="color: rgb(16, 17, 17);">CHAT</h1>
+	<div style="width: 100%; color: rgb(7, 3, 3);" id="isichat">
     </div>
-    <script src="script.js"></script>
-  </body>
+	<form method="REQUEST" onsubmit="return kirim();" style="color: rgb(108, 21, 221);">
+		<input id="pesan" style="width: 50%" type="text" name="pesan">
+		<button type="submit" onclick="return kirim();">KIRIM PESAN</button>
+	</form>
+</center>	
+</body>
+<script type="text/javascript">
+	function kirim() {
+		let pesan = document.getElementById("pesan").value;
+		document.getElementById("isichat").innerHTML += pesan+"<br/>";
+		document.getElementById("pesan").value = "";
+		return false;
+    }
+</script>
 </html>
